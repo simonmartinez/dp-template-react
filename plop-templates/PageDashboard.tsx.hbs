@@ -1,0 +1,49 @@
+import { useEffect, useState } from 'react'
+import DashboardLayout from '../../components/dashboard/DashboardLayout';
+import DashboardFilter from '../../components/dashboard/DashboardFilter';
+import { useSearchParams } from 'react-router-dom';
+
+function {{pascalCase name}}() {
+  const [searchParams, setSearchParams] = useSearchParams();
+  const [filters, setFilters] = useState<Record<string, string>>(() => {
+    const params: Record<string, string> = {};
+    searchParams.forEach((value, key) => {
+      params[key] = value;
+    });
+    return params;
+  });
+
+  const handleApplyFilters = (newFilters: Record<string, string>) => {
+    setFilters(newFilters);
+    const newParams = new URLSearchParams(newFilters);
+    setSearchParams(newParams);
+  };
+
+  useEffect(() => {
+    const newParams = new URLSearchParams(filters);
+    setSearchParams(newParams);
+  }, [filters, setSearchParams]);
+
+  return (
+    <DashboardLayout>
+      <DashboardLayout.Left>
+        <DashboardFilter filters={filters} onApplyFilters={handleApplyFilters} />
+      </DashboardLayout.Left>
+      <DashboardLayout.Right>
+        <>
+          <h2 className="text-2xl font-bold mb-4">{{pascalCase name}}</h2>
+          <div className="block xl:flex gap-3">
+            <div className="flex-1">
+              ...
+            </div>
+            <div className="flex-1">
+              ...
+            </div>
+          </div>
+        </>
+      </DashboardLayout.Right>
+    </DashboardLayout>
+  )
+}
+
+export default {{pascalCase name}}

@@ -1,0 +1,26 @@
+import React from "react";
+import { {{pascalCase name}} as Recharts{{pascalCase name}}, ResponsiveContainer } from "recharts";
+import { QueryRequest, QueryResponse } from "../../../models/dataplatform/Query";
+import { formatNumber, transformDataForCharts } from "../../../services/utils/ChartUtils";
+import { useTranslation } from "react-i18next";
+
+type {{pascalCase name}}Props = {
+    response: QueryResponse
+    query: QueryRequest
+    dictionnary?: any | undefined
+};
+
+const {{pascalCase name}}: React.FC<{{pascalCase name}}Props> = ({ response, query, dictionnary }) => {
+    const { i18n } = useTranslation();
+    const transformedData = transformDataForCharts(response, query, dictionnary);
+
+    return (
+        <ResponsiveContainer width="100%" height="100%">
+            <Recharts{{pascalCase name}}>
+
+            </Recharts{{pascalCase name}}>
+        </ResponsiveContainer>
+    );
+};
+
+export default {{pascalCase name}};

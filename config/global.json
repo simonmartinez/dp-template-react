@@ -1,0 +1,6 @@
+{
+    "i18n": {
+      "en": "file://config/i18n/en.json",
+      "fr": "file://config/i18n/fr.json"
+    }
+  }

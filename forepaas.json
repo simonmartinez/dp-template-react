@@ -1,0 +1,19 @@
+{
+  "type": "app",
+  "language": "js",
+  "framework": "react",
+  "version": "1.0.1",
+  "node": 22,
+  "publicPath": "public",
+  "management": {
+    "dashboards": {
+    },
+    "extensions": false,
+    "formatter": false,
+    "menu": false,
+    "style": false,
+    "traduction": false
+  },
+  "modules": {
+  }
+}

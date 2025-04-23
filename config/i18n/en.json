@@ -1,0 +1,15 @@
+{
+    "menu": {
+        "home": "Home",
+        "logout": "Logout"
+    },
+    "authentication": {
+        "username": "Username",
+        "username_placeholder": "Your username",
+        "password": "Password",
+        "password_placeholder": "Your password",
+        "sign_in": "Sign in",
+        "forgot_password": "Forgot your password",
+        "back": "Back"
+    }
+}
