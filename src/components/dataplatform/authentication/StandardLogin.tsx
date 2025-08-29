@@ -9,7 +9,7 @@ import MFA from "./MFA";
 import { FormLogin } from "../../../models/dataplatform/Authentication";
 import { Loader2, User2 } from "lucide-react";
 import ForgotPassword from "./ForgotPassword";
-import { useTranslation } from "react-i18next";
+import { useTranslation } from "../../../../node_modules/react-i18next";
 
 type StandardLoginProps = {
     authMode: AuthMode;

@@ -2,7 +2,7 @@ import React from "react";
 import { Tooltip, ResponsiveContainer, BarChart as RechartsBarChart, XAxis, YAxis, Bar } from "recharts";
 import { QueryRequest, QueryResponse } from "../../../models/dataplatform/Query";
 import { formatNumber, transformDataForCharts } from "../../../services/utils/ChartUtils";
-import { useTranslation } from "react-i18next";
+import { useTranslation } from "../../../../node_modules/react-i18next";
 
 type BarChartProps = {
     response: QueryResponse

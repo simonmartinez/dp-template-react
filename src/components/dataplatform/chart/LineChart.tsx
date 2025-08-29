@@ -2,7 +2,7 @@ import React from "react";
 import { Tooltip, ResponsiveContainer, LineChart as RechartsLineChart, XAxis, YAxis, Line } from "recharts";
 import { QueryRequest, QueryResponse } from "../../../models/dataplatform/Query";
 import { formatNumber, transformDataForCharts } from "../../../services/utils/ChartUtils";
-import { useTranslation } from "react-i18next";
+import { useTranslation } from "../../../../node_modules/react-i18next";
 
 
 type LineChartProps = {

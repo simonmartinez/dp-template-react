@@ -6,7 +6,7 @@ import { useAuth } from "../contexts/dataplatform/AuthContext";
 import Logo from '../assets/logo.png'
 import { Tooltip as ShadcnTooltip, TooltipContent, TooltipTrigger } from "./ui/tooltip";
 import { useEffect, useRef, useState } from "react";
-import { useTranslation } from "react-i18next";
+import { useTranslation } from "../../node_modules/react-i18next";
 
 const Menu = () => {
     const { t, i18n } = useTranslation();

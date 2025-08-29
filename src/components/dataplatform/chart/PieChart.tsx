@@ -2,7 +2,7 @@ import React from "react";
 import { Tooltip, PieChart as RechartsPieChart, Pie, Cell, ResponsiveContainer } from "recharts";
 import { QueryRequest, QueryResponse } from "../../../models/dataplatform/Query";
 import { formatNumber, transformDataForCharts } from "../../../services/utils/ChartUtils";
-import { useTranslation } from "react-i18next";
+import { useTranslation } from "../../../../node_modules/react-i18next";
 
 const COLORS = [
     "#0088FE", "#00C49F", "#FFBB28", "#FF8042", "#FF5C8D",
